@@ -2,13 +2,13 @@ window.onload = () => {
   function pint(el, text) {
     return new Promise((resolve, reject) => {
 
-      let i = 1
+      let x = 1
       const id = setInterval(() => {
-        if(i >= text.length) {
+        if(x >= text.length) {
           clearInterval(id)
           resolve(undefined)
         }
-        el.innerText = text.slice(0, i++)
+        el.innerText = text.slice(0, x++)
       }, 120)
     })
   }
@@ -39,8 +39,8 @@ window.onload = () => {
     onEnd: async () => {
       const list = sortable.toArray()
       list.forEach((item, index) => document.querySelector(`.list .data${ item }`).style.zIndex = 10 - index + '')
-      for(let i = 0; i < list.length; i++) {
-        if(i != list[i]) return
+      for(let x = 0; x < list.length; x++) {
+        if(x != list[x]) return
       }
       if(b === true) return
       b = true
