@@ -6,7 +6,10 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css"/>
   <script src="js/Sortable.min.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/index.js">
+    var urlParams = new URLSearchParams(window.location.search);
+		var i = parseInt(urlParams.get('i'));
+  </script>
 </head>
 <body>
 <div class="warp view1">
