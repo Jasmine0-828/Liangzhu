@@ -1,4 +1,7 @@
+
 window.onload = () => {
+  var urlParams = new URLSearchParams(window.location.search);
+  var i = parseInt(urlParams.get('i'));
   function pint(el, text) {
     return new Promise((resolve, reject) => {
 
@@ -57,4 +60,5 @@ window.onload = () => {
       el2.style.opacity = '1'
     },
   })
+  
 }
