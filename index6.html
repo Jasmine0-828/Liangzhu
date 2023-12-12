@@ -6,10 +6,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css"/>
   <script src="js/Sortable.min.js"></script>
-  <script src="js/index.js">
-    var urlParams = new URLSearchParams(window.location.search);
-    var i = parseInt(urlParams.get('i'));
-  </script>
+  <script src="js/index.js"></script>
 </head>
 <body>
 <div class="warp view1">
@@ -18,22 +15,22 @@
   </div>
   <div class="list">
     <p data-key="3" class="data3" style="z-index: 8">
-      <img src="images/4.png" alt=""/>
+      <img src="images/4.png" alt="">
     </p>
     <p data-key="1" class="data1" style="z-index: 10">
-      <img src="images/2.png" alt=""/>
+      <img src="images/2.png" alt="">
     </p>
     <p data-key="2" class="data2" style="z-index: 9">
-      <img src="images/3.png" alt=""/>
+      <img src="images/3.png" alt="">
     </p>
     <p data-key="0" class="data0">
-      <img src="images/1.png" alt=""/>
+      <img src="images/1.png" alt="">
     </p>
     <p data-key="5" class="data5" style="z-index: 6">
-      <img src="images/6.png" alt=""/>
+      <img src="images/6.png" alt="">
     </p>
     <p data-key="4" class="data4" style="z-index: 7">
-      <img src="images/5.png" alt=""/>
+      <img src="images/5.png" alt="">
     </p>
   </div>
 </div>
@@ -45,8 +42,16 @@
     <img src="./images/im1.png">
   </div>
 </div>
-<div class="warp view3" style="opacity: 0;z-index: -1">
+<div class="warp view3" style="opacity: 0;z-index: -1" onclick="goTo()">
   <img src="./images/im2.jpg">
 </div>
+<script>
+  function goTo(){
+    var urlParams=new URLSearchParams(window.location.search);
+    var i=parseInt(urlParams.get('i'));
+    window.location.href="https://radireaction.github.io/Liangzhu/index5.html?i="+i;
+  }
+    
+</script>
 </body>
 </html>
