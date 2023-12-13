@@ -46,6 +46,13 @@
     </div>
 
   </main>
+  <script>
+    document.body.addEventListener('click', function() {
+      var urlParams = new URLSearchParams(window.location.search);
+      var i = parseInt(urlParams.get('i') || 0);
+      window.location.href="https://radireaction.github.io/Liangzhu/index.html?i=" + i;
+    });
+  </script>
 </body>
 
 </html>
