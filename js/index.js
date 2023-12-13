@@ -48,7 +48,7 @@ window.onload = () => {
       if(b === true) return
       b = true
       document.querySelector('.warp .text').style.opacity = 1
-      await pint(document.querySelector('.view1 .text'), '莫角山宫殿是中国最早的、规模最大的史前宫殿区。古城遗址建于 沼泽湿地之上，以莫角山台地为中心，从外城、内城、宫殿区逐层升高堆筑高度营建城市，体现了良渚先民们“三重空间、以中为尊、崇尚高耸”的城市规划 理念，以及“藏礼于城”的意识形态，并呈现出早期国家的形态。')
+      await pint(document.querySelector('.view1 .text'), '莫角山宫殿是中国最早的、规模最大的史前宫殿区。古城遗址建于沼泽湿地之上，以莫角山台地为中心，从外城、内城、宫殿区逐层升高堆筑高度营建城市，体现了良渚先民们“三重空间、以中为尊、崇尚高耸”的城市规划 理念，以及“藏礼于城”的意识形态，并呈现出早期国家的形态。')
       await waitClick()
       const el = document.querySelector('.view2')
       el.style.zIndex = '1'
